@@ -53,10 +53,10 @@ class Monitor():
     # Funciones Boooleanas para las condiciones
     
     def puede_entrar_N(self) -> bool:
-        return self.nVehiS.value == 0 and self.nPeat.value == 0 #Esto hay que ver como lo limitamos si queremos que pueda entrar mas de uno and self.n_north.value == 0
+        return self.nVehiS.value == 0 and self.nPeat.value == 0 
     
     def puede_entrar_S(self) -> bool:
-        return self.nVehiN.value == 0 and self.nPeat.value == 0 #and self.n_south.value == 0 
+        return self.nVehiN.value == 0 and self.nPeat.value == 0 
     
     def puede_entrar_P(self) -> bool:
         return self.nVehiN.value == 0 and self.nVehiS.value == 0 
