@@ -11,13 +11,13 @@ NORTE = 0
 SUR = 1
 
 NCARS = 20
-NPED = 100
+NPED = 20
 
-TIME_CARS_NORTH = 2     # Delay de la produccion de vehiculos en direccion norte
-TIME_CARS_SOUTH = 2     # Delay de la produccion de vehiculos en direccion sur
-TIME_PED = 1            # Delay de la produccion de peatones
+TIME_CARS_NORTH = 5     # Delay de la produccion de vehiculos en direccion norte
+TIME_CARS_SOUTH = 5     # Delay de la produccion de vehiculos en direccion sur
+TIME_PED = 3            # Delay de la produccion de peatones
 
-TIME_IN_BRIDGE_CARS = (2, 0.5)          # Tiempo que tarda un vehiculo en cruzar el puente en cualquier direccion
+TIME_IN_BRIDGE_CARS = (10, 1)          # Tiempo que tarda un vehiculo en cruzar el puente en cualquier direccion
 TIME_IN_BRIDGE_PEDESTRIAN = (20, 5)    # Tiempo que tarda una peaton en cruzar el puente en cualquier direccion
 
 class Monitor():
@@ -213,4 +213,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    time.sleep(2000)
